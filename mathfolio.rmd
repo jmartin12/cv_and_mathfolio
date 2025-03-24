@@ -1,0 +1,115 @@
+---
+title: "Mathematical Portfolio"
+author: "Jacob Martin"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+    highlight: tango
+    css: |
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+      }
+      h1 {
+        font-size: 28px;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #34495e;
+        margin-top: 25px;
+      }
+      h3 {
+        font-size: 20px;
+        color: #2c3e50;
+      }
+      .topic-section {
+        margin: 15px 0;
+      }
+      .topic-item {
+        margin: 8px 0;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Reports
+
+### Emphasis on Financial Domain 
+
+- [Financial Regime Modeling Using Hidden Markov Chains](reports/HMM_report.pdf)
+- [Microeconomics and Duopolistic Competition](reports/microeconomics_report.pdf)
+- [Stock and Options Modeling](reports/stock_and_options_modeling.pdf)
+
+### Emphasis on Scientific Computing
+
+- [Solving the Heat Equation Across Irregular Domains](reports/amib_report.pdf)
+- [Efficiency of Parallel Computing](reports/parallel_computing_efficiency.pdf)
+- [Counter-Strike 2 Meets Mutually Exciting Point Processes](reports/MEPP_report.pdf)
+
+## Code Examples
+
+- [Jacobian](fortran/jacobian_iterative.f90)
+- [Gaussian elimination](fortran/gaussian_elimination.f90)
+- [Modified Euler](fortran/modified_euler.f90)
+- [Linear Finite Difference](fortran/linear_finite_difference.f90)
+- [Crout Factorization & Jacobian Parallelized Using MPI](fortran/crout_factorization_parallelized.f90)
+- [Brownian Motion](r/brownian_motion.R)
+- [Binomial Distribution](r/binomial_r.R)
+
+## Statistical Arbitrage 
+
+- Implemented a full-fledged statistical arbitrage system capitalizing on statistical inconsistencies across every legal U.S. book maker
+- Adjusted the traditional derivations for arbitrage to perform in such a manner that goes undetected by the house
+
+## Other Topics Covered
+
+<div class="topic-section">
+
+### Probability Theory & Statistics
+- Poisson Processes
+- Queuing Theory
+- Martingales
+- Distributions
+  - Uniform
+  - Gaussian
+  - Binomial
+  - Poisson
+  - Exponential
+  - Chi-Square
+  - Normal
+  - Multivariate
+
+### Mathematical Analysis
+- Real Analysis
+- Differential Equations
+  - Partial
+  - Ordinary
+  - Boundary-Value Problems
+- Fourier Transform
+- Fast Fourier Transform
+
+### Optimization & Applied Mathematics
+- Linear Programming (Maximization / Minimization)
+- Game Theory
+- Monte Carlo Methods
+- Financial Calculus
+- Statistical Data Visualization
+
+</div>
